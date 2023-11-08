@@ -9,5 +9,5 @@ RUN apt update && \
     echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config && \
     echo root:ab052104|chpasswd && \
     chmod 755 /1.sh
-EXPOSE 80
+EXPOSE 80 7000 8000
 CMD  /1.sh
